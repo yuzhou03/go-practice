@@ -24,7 +24,7 @@ func Pause(fetchType int) {
 		msg = fmt.Sprintf("等待处理下一个forum，Sleeping for %v seonds...\n", pausePerForum)
 		fmt.Println(msg)
 		time.Sleep(time.Second * sleepSeconds)
-		fmt.Println("Done")
+		fmt.Println("Sleep Done")
 
 	} else if fetchType == THREAD {
 		//pausePerThread := config.Config.Fetch.Pause.PausePerThread
@@ -33,7 +33,7 @@ func Pause(fetchType int) {
 		msg = fmt.Sprintf("等待处理下一个Thread，Sleeping for %v seonds...\n", pausePerThread)
 		fmt.Println(msg)
 		time.Sleep(time.Second * sleepSeconds)
-		fmt.Println("Done")
+		fmt.Println("Sleep Done")
 	} else if fetchType == IMAGE {
 		//pausePerImage := config.Config.Fetch.Pause.PausePerImage
 		pausePerImage := 3000
@@ -41,7 +41,7 @@ func Pause(fetchType int) {
 		msg = fmt.Sprintf("等待处理下一个Image，Sleeping for %v milliSecond...\n", pausePerImage)
 		fmt.Println(msg)
 		time.Sleep(time.Millisecond * milliSecond)
-		fmt.Println("Done")
+		fmt.Println("Sleep Done")
 	}
 
 }
