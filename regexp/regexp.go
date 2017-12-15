@@ -1,9 +1,9 @@
-package regexp
+package main
 
 import (
-	"regexp"
-	"fmt"
 	"bytes"
+	"fmt"
+	"regexp"
 )
 
 var p = fmt.Println
